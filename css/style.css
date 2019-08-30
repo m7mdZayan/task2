@@ -1,0 +1,731 @@
+/*    Global Properties        */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+}
+
+/*** start of Header ***/
+header{
+    background-image: url(../images/headerCover.jpg);
+    background-size: cover;
+    height:550px;
+    color:#45aaf2;
+    position: relative;
+}
+header .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+.headerWrap{
+    width: 75%;
+    margin: 0 auto;
+}
+header img{
+    width:120px;
+    height: 40px;
+}
+.logoAndNav{
+    display: flex;
+    padding-top: 5px;
+}
+.logoAndNav div{
+    flex:1;
+}
+nav ul{
+    list-style: none;
+    flex:1;
+    padding-top: 10px;
+}
+nav li {
+    display: inline-block;
+    margin-left: 25px;
+}
+nav a {
+    text-decoration: none;
+    color:#569ae4;
+}
+nav a:hover{
+    color:#fff;
+}
+header h2{
+    margin: 65px 0 35px 0;
+    font-size: 2.6em;
+    color:#7582ff;
+}
+header p{
+    width:450px;
+    font-size: 1.4em;
+    margin-bottom: 35px;
+    color:00f;
+}
+header button{
+    width:300px;
+    height: 50px;
+    background-color:#26da81;
+    border-radius: 20px;
+    color:#fff;
+    font-size: 1.4em;
+    border: none;
+    margin-bottom: 20px;
+}
+header button:hover{
+    border-radius: 40px;
+    cursor: pointer;
+     background-color:#26ee81;
+}
+/***** end of header ******/
+
+
+/***************** Start of About **************************/
+main{
+    margin-top: 40px;
+}
+main h2{
+    text-align: center;
+    color: #08a8b3;
+    text-transform: uppercase;
+    margin: 20px 0 30px;
+    font-size: 1.9em;
+}
+article{
+    display: flex;
+    width:65%;
+    margin: 0 auto;
+    color: #08a8b3;
+}
+article div{
+    flex: 1;
+    padding-right:20px;
+}
+article div img{
+    width:100%;
+    height: 100%;
+    min-width: 200px;
+}
+article section{
+    flex:1;
+}
+article h3 {
+    font-size: 1.5em;
+    margin: 20px;
+    text-transform: capitalize;
+}
+article p{
+    margin-bottom: 40px;
+    line-height: 1.3;
+}
+article button{
+    background-color: #9857eb;
+    width:200px;
+    height: 35px;
+    border: none;
+    color:#fff;
+    border-radius: 20px;
+}
+article button:hover{
+    cursor: pointer;
+    width:210px;
+    border-radius: 40px;
+}
+
+/***************** end of About **************************/
+
+
+/***************** Start of Stanard Pics **************************/
+
+#pictures .box{
+    display: flex;
+    width:65%;
+    margin: 0 auto;
+    margin-top:25px;
+    color:#08a8b3;
+}
+.box section{
+    flex:1;
+}
+.box div{
+    flex:1;
+}
+#pictures h3{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin:20px 0 35px;
+}
+#pictures p{
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+.box div{
+    padding: 30px;
+}
+#pictures img{
+    height:360px;
+    width:100%;
+    min-width: 200px;
+}
+
+
+
+
+/***************** end of Stanard Pics **************************/
+
+
+/***************** Start of features **************************/
+
+#features{
+    margin-top: 40px;
+}
+#features h2{
+    color:#08a8b3;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.9;
+}
+
+.featuresWrapper{
+    display: flex;
+    width:65%;
+    margin: 0 auto;
+}
+.featuresWrapper div{
+    flex:1;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+.featuresWrapper i {
+    color:#29e558;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.featuresWrapper h3{
+    text-transform: capitalize;
+    color:#569ae4;
+    margin-bottom: 15px;
+}
+.featuresWrapper p{
+    color:#16b43e;
+}
+
+/***************** end of features **************************/
+
+
+/************* start of feedback ***************/
+
+#feedback{
+    margin-top: 40px;
+}
+#feedback h2{
+      color:#08a8b3;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.9;
+    margin-top: 35px;
+}
+.feedbackWrapper{
+    width:65%;
+    margin: 0 auto;
+    display: flex;
+}
+.feedbackWrapper div{
+    padding: 20px;
+    text-align: center;
+}
+.feedbackWrapper p{
+    background-color: #eee;
+    padding: 20px;
+    color:#86b012;
+}
+.feedbackWrapper img{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.name,.job{
+    display: block;
+    color:#86b012;
+    margin: 5px 0 5px;
+}
+.name{
+    text-transform: capitalize;
+}
+.job{
+    text-transform: uppercase;
+}
+
+
+
+
+/************* end of feedback ***************/
+
+/************* start of Price ***************/
+#price{
+    margin-top: 40px;
+}
+#price h2{
+    color:#08a8b3;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.9;
+    margin-bottom: 10px;
+}
+.priceWrapper{
+    width:65%;
+    margin: 0 auto;
+    display: flex;
+}
+.priceWrapper div{
+    flex:1;
+    text-align: center;
+    padding: 20px;
+}
+.priceHead{
+    background-color: #000;
+    color: #fff;
+    padding-top: 20px;
+}
+.priceWrapper h3{
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.priceWrapper span{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+.priceWrapper p{
+    font-size: 1.3em;
+}
+.priceDecription{
+    background-color:#26ee81;
+}
+hr{
+    color:#fff;
+}
+.superPro{
+    transform: rotate(-5deg);
+}
+.free{
+    transform: rotate(5deg);
+}
+
+/********************end of price ***************/
+
+
+/********************start of new letters ***************/
+
+.newLettres{
+    background-image: url(../images/cover2..jpg);
+    background-size: cover;
+    padding: 100px;
+    text-align: center;
+    margin-top: 40px;
+}
+.newLettres h2{
+     color:#fff;
+     text-transform: uppercase;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+.newLettres input{
+    display: block;
+    margin: 0 auto;
+}
+.newLettres [type="text"]{
+    width: 350px;
+    height: 35px;
+    margin-bottom: 35px;
+}
+.newLettres [type="submit"]{
+    width: 350px;
+    height: 35px;
+    background-color:#26ee81;
+    color: #fff;
+    border: none;
+ 
+}
+.newLettres [type="submit"]:hover{
+    border-radius: 20px;
+    cursor: pointer;
+    background-color:#26ff81;
+    
+}
+/********************end of new letters ***************/
+
+/**************start of join us ******************/
+
+#joinUS{
+    margin-top: 40px;
+    padding: 10px;
+}
+#joinUS .joinUSWrapper{
+    display: flex;
+    width: 65%;
+    margin: 0 auto;
+}
+.joinUSWrapper div{
+    flex: 1;
+    text-align: center;
+}
+.joinUsText{
+    padding: 15px;
+}
+.joinUSWrapper i{
+    font-size: 250px;
+    color:#8a10ec;
+}
+#joinUS h2{
+     color:#08a8b3;
+    text-transform: uppercase;
+    font-size: 1.9;
+    margin-bottom: 25px;
+}
+#joinUS p{
+    color:#08a8b3;
+    line-height: 1.3;
+    margin-bottom: 40px;
+}
+#joinUS button{
+    width:120px;
+    height: 30px;
+    background-color: #26ee81;
+    color:#fff;
+    border-radius: 20px;
+    border: none;
+}
+#joinUS button:hover{
+  border-radius: 20px;
+    cursor: pointer;
+    background-color:#26ff81;
+}
+/**************end of join us ******************/
+
+/****************** start of icons ********************/
+.icons{
+    background-color: #eee;
+    margin-top: 30px;
+    padding: 30px;
+}
+.icons .iconsWrapper{
+    display: flex;
+    width:65%;
+    margin: 0 auto;
+}
+.iconsWrapper .icon{
+    flex: 1;
+    text-align: center;
+}
+.icons i{
+    font-size: 80px;
+    color:#8a10ec;   
+}
+.icons span{
+    display: block;
+    color:#26ea81;
+    margin: 10px;
+    font-size: 1.3em;
+}
+.icons p{
+    text-transform: capitalize;
+    color:#8a10ec;
+}
+/****************** end of icons ********************/
+
+
+/****************** start of contact ********************/
+#contactUs{
+    background-color: #8a10fc;
+}
+#contactUs .contactUsWrapper{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px;
+}
+.contactUsWrapper div{
+    flex: 1;
+}
+#contactUs .messages{
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px 0 0 20px;
+    
+}
+.messages h2{
+    color:#08a8b3;
+    text-transform: uppercase;
+    font-size: 1.9;
+    margin-bottom: 25px;
+}
+.messages input{
+    width: 200px;
+    margin: 10px 15px 25px 0;
+}
+.messages textarea{
+    width:250px;
+    height: 100px;
+}
+.messages button{
+    display: block;
+    margin-top: 50px;
+    width: 230px;
+    height: 30px;
+    background-color: #8a10ec;
+    color:#fff;
+    border: none;
+    border-radius: 20px;
+}
+.messages button:hover{
+    cursor: pointer;
+    background-color: #8a10b2;
+}
+#contactUs .address{
+    background-color: #26ee81;
+    border-radius: 0 20px 20px 0;
+    text-align: center;
+    padding: 140px;
+    color: #fff;
+}
+#contactUs .address p{
+    margin-bottom: 20px;
+}
+/****************** end of contact us ********************/
+
+/*************** start of the footer *********************/
+footer{
+    background-color: #000;
+    color:#fff;
+    padding: 40px;
+    position: relative;
+}
+.footerWrapper{
+    display: flex;
+    width:65%;
+    margin: 0 auto;
+}
+footer .about{
+    flex:4;
+    padding-right: 20px;
+}
+footer .footerPart{
+    flex:1;
+    margin-right: 40px;
+}
+footer h4{
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+footer p{
+    margin-bottom: 20px;
+}
+footer i{
+    margin: 10px 10px 10px 0;
+    font-size: 2em;
+}
+footer i:hover{
+    cursor: pointer;
+    color:#8a10ec;
+}
+footer .copyrights{
+    text-align: center;
+    padding-top: 30px;
+}
+/*************** end of the footer *********************/
+
+
+/*************************    Tablets                            ******************************************/
+@media ( min-width :768px ) and (max-width: 991px){
+    
+        /* Start of Header        ***************/
+    .logoAndNav{
+        display: block;
+        text-align: center;
+    }
+        /* End of Header        ***************/
+    
+    
+        /****************** start of contact ********************/
+    
+    .messages input{
+        width: 150px;
+    }
+    .messages textarea{
+        width:200px;
+    }
+    .messages button{
+        width: 200px;
+    }
+        /****************** end of contact ********************/
+        /*************** start of the footer *********************/
+
+    
+    .footerWrapper{
+        display: block;
+    }
+    .footerWrapper div{
+        margin-bottom: 25px;
+    }
+    
+    /*************** end of the footer *********************/
+
+    
+}
+
+
+
+/**************     Mobiles                               ****************************************/
+@media (max-width : 767px){
+    /*** start of Header ***/
+    
+    header{
+        text-align: center;
+        height: auto;
+    }    
+    .logoAndNav{
+        display: block;
+    }
+    nav li {
+        margin: 10px 0 8px 10px;
+    }
+    header p{
+        width: auto;
+    }
+    
+    
+    /***** end of header ******/
+    
+    
+    /***************** start of About **************************/
+    article{
+        display: block;
+    }
+    article{
+        text-align: center;
+    }
+    article button{
+        display: block;
+        width:150px;
+        margin:0 auto;
+    }
+    
+    
+    /***************** end of About **************************/
+    
+    /***************** Start of Stanard Pics **************************/
+    #pictures .box{
+        display: block;
+    }
+    #pictures h3{
+        margin-top: 40px;
+    }
+    .box{
+        text-align: center;
+    }
+    
+    /***************** end of Stanard Pics **************************/
+    
+    /***************** Start of features **************************/
+    
+    .featuresWrapper{
+        display: block;
+    }
+    
+    /***************** end of features **************************/
+    
+    /************* start of feedback ***************/
+    .feedbackWrapper{
+        display: block;
+    }
+    /************* end of feedback ***************/
+    
+    /************* start of Price ***************/
+    .priceWrapper{
+        display: block;
+    }
+    .free , .superPro{
+        transform: none;
+    }
+    /************* end of Price ***************/
+
+    /********************start of new letters ***************/
+    
+    .newLettres input[type="text"],.newLettres [type="submit"]{
+        width:150px ;
+    }
+    
+    
+    /********************end of new letters ***************/
+    
+    /**************start of join us ******************/
+    #joinUS .joinUSWrapper{
+        display: block;
+    }
+    .joinUSWrapper i{
+        font-size: 200px;
+        margin-top: 15px;
+    }
+    
+    /**************end of join us ******************/
+    
+    /****************** start of icons ********************/
+    
+    
+    .icons .iconsWrapper{
+        display: block;
+    }
+    .icons .icon{
+        margin-bottom: 20px;
+    }
+    
+    
+    /****************** end of icons ********************/
+    
+    /****************** start of contact ********************/
+
+    #contactUs .contactUsWrapper
+    {
+        display: block;
+    }
+    #contactUs .messages ,#contactUs  .address{
+        border-radius: 0;
+    }
+    #contactUs  .address{
+        padding: 50px;
+    }
+    #contactUs input{
+        width:170px;
+    }
+    #contactUs textarea{
+        width:150px;
+    }
+    #contactUs button{
+        width: 150px;
+    }
+    /****************** end of contact ********************/
+    
+    /*************** start of the footer *********************/
+    .footerWrapper{
+        display: block;
+    }
+    .footerWrapper div{
+        margin-bottom: 25px;
+    }
+
+    
+    /***************end of the footer *********************/
+
+
+
+
+   
+}
